@@ -1,0 +1,17 @@
+.contact-main{
+    margin-top:3%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    color:#cad3f5;
+    font-family: "EB Garamond", serif;
+}
+
+.contact-main h1{
+    font-size:30px;
+}
+
+.contact-main p{
+    font-size:20px;
+}

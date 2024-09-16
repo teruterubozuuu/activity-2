@@ -1,0 +1,57 @@
+body{
+    background-color: #24273a;
+}
+
+.post-wrapper{
+    background-color: #1e2030;
+    grid-template-columns: repeat(1, 1fr);
+    border-radius: 5px;
+    color:#cad3f5;
+    box-shadow: 5px 5px 8px #181926;
+    font-family: "EB Garamond", serif;
+    margin-bottom:20px;
+}
+
+.post{
+    padding:10px;
+}
+
+.img-name-cont{
+    display:flex;
+    margin-left:10px;
+}
+
+.pfp{
+    margin:20px;
+    width:60px;
+    border-radius: 50px;
+}
+
+.username-wrapper{
+    display:block;
+    margin-left:-10px;
+}
+
+
+.name{
+    margin-top:24px;
+    margin-bottom:-15px;
+    font-weight: 800;
+    font-size:19px;
+}
+
+.post-text{
+    margin-top:-10px;
+    margin-left:30px;
+    padding:0 10px;
+    font-size:20px;
+}
+
+.attchImg{
+    max-width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:20px;
+    border-radius: 5px;
+}

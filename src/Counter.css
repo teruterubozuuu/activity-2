@@ -1,0 +1,41 @@
+.main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+  }
+  
+  .counter-wrapper{
+    display:block
+  }
+  
+  .label{
+    color:#c6a0f6;
+    font-size:70px;
+    margin:15px 0;
+    text-align: center;
+  }
+  
+  .counter-wrapper span{
+    color:#ed8796;
+  }
+  
+  .counter-wrapper button{
+    margin:0 10px;
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    font-family: "Poppins" , sans-serif;
+    background-color: #ed8796;
+    color:white;
+    font-weight:450;
+    font-size:35px;
+    cursor:pointer;
+    transition:0.5s ease;
+  
+  }
+  
+  .counter-wrapper button:hover{
+    background-color: #c6a0f6;
+    color:rgb(255, 255, 255);
+  }
