@@ -1,0 +1,54 @@
+
+.error-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "EB Garamond", serif;
+    position:relative;
+    height:100vh;
+    text-align: center;
+    background-color: #24273a;
+    z-index:3;
+}
+
+.error{
+    position:absolute;
+    display:block;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.notFoundTitle{
+    color:#cad3f5;
+    font-size:100px;
+    margin:0;
+}
+
+.notFoundDesc{
+    color:#cad3f5;
+    font-size:30px;
+}
+
+
+.errorPic{
+    border-radius: 10px;
+}
+
+.backToHome{
+    border: none;
+    border-radius: 10px;
+    padding:10px 20px;
+    font-size:20px;
+    background-color: #c6a0f6;
+    transition:0.5s ease;
+}
+
+.backToHome:hover{
+    background-color: #a071da;
+}
+
+.backHomeLink{
+    text-decoration: none;
+    color:white;
+}

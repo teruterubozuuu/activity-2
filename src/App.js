@@ -1,10 +1,11 @@
-import './Header.css';
 import './Apps.css';
 import Counter from './Counter';
+import Header from './Header';
 import Home from './Home';
 import About from './About';
 import Contact from './Contact';
-import { BrowserRouter as Router, Route, Routes,Link } from 'react-router-dom';
+import Notfound from './Notfound';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import enidImg from "./images/enid.jpg";
 import wednesdayImg from "./images/wednesday.jpg"
 import wedsMeme from "./images/w-meme.jpg"
@@ -13,24 +14,14 @@ import enidgif from "./images/enid-smirk.gif"
 import yokoImg from "./images/yoko.jpg"
 import yokoEnid from "./images/enid-and-yoko.jpg"
 import students from "./images/nevermorestudents.jpg"
-
+import errorPic from "./images/notfound.jpg"
 function App() {
+
   return (
     <div>
      <Router>
-      <header>
-      <div className='wrapper'>
-        <div className='title-cont'>
-          <p className='blog-title'>The Quad</p>
-        </div>
-        <ul>
-          <li><Link to="/" className='navLinks'>Home</Link></li>
-          <li><Link to="/about" className='navLinks'>About</Link></li>
-          <li><Link to="/contact" className='navLinks'>Contact</Link></li>
-          <li><Link to="/counter" className='navLinks'>Counter for funsies!</Link></li>
-        </ul>
-        </div>
-      </header>
+      
+      <Header></Header>
       <Routes>
         <Route path="/" element={
           <div className='main-home'>
@@ -48,6 +39,7 @@ function App() {
         <Route path="/about" element={<About students={students}/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/counter" element={<Counter/>} />
+        <Route path="*" element={<Notfound notfoundpic={errorPic}/>} />
       </Routes>
     </Router> 
     </div>

@@ -10,6 +10,7 @@ body{
     box-shadow: 5px 5px 8px #181926;
     font-family: "EB Garamond", serif;
     margin-bottom:20px;
+    z-index:1;
 }
 
 .post{
@@ -45,6 +46,7 @@ body{
     margin-left:30px;
     padding:0 10px;
     font-size:20px;
+    text-align: start;
 }
 
 .attchImg{
